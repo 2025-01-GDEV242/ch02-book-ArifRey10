@@ -13,6 +13,7 @@ class Book
     private String title;
     private int pages;
     private String refNumber;
+    private int borrowed;
 
     /**
      * Set the author and title fields when this object
@@ -71,12 +72,13 @@ class Book
     
     public void setRefNumber(String Ref)
     {
-        if(ref.length()>=3){
+        if(Ref.length()>=3){
         refNumber = Ref;
     }
-    {
+    
         else{
             System.out.println("Error! Must be 3 characters.");
         }
     }
 }
+
